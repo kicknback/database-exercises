@@ -10,19 +10,22 @@ WHERE last_name LIKE 'E%'
 GROUP BY last_name
 ORDER BY last_name;
 
-SELECT last_name, first_name FROM employees
+SELECT last_name, first_name
+FROM employees
 WHERE last_name LIKE 'E%'
   AND last_name LIKE '%e'
 GROUP BY last_name, first_name
 ORDER BY last_name;
 
-SELECT last_name FROM employees
+SELECT last_name
+FROM employees
 WHERE last_name LIKE '%q%'
   AND last_name NOT LIKE '%qu%'
 GROUP BY last_name
 ORDER BY last_name;
 
-SELECT COUNT(last_name), last_name FROM employees
+SELECT COUNT(last_name), last_name
+FROM employees
 WHERE last_name LIKE '%q%'
   AND last_name NOT LIKE '%qu%'
 GROUP BY last_name
