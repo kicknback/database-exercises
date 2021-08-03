@@ -4,13 +4,13 @@ DROP TABLE IF EXISTS movies;
 
 CREATE TABLE IF NOT EXISTS movies
 (
-    id       INT,
+    id       INT AUTO_INCREMENT,
     title    VARCHAR(75)  NOT NULL,
-    rating   INT,
+    rating   CHAR,
     actors   TEXT         NOT NULL,
     director VARCHAR(50)  NOT NULL,
     genre    VARCHAR(255) NOT NULL,
     plot     TEXT         NOT NULL,
     poster   TEXT,
-    year     INT          NOT NULL
+    year     VARCHAR(4)          NOT NULL
 );
